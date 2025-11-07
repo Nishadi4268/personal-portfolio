@@ -507,23 +507,23 @@ ul.numbersList span{
 
 
 /* ///////////////////////////////////////////////////////////////////// 
-//  08 - Testimonials
+//  08 - experience
 /////////////////////////////////////////////////////////////////////*/
 
-#testimonials {
+#experience {
     padding: 60px 0;
 }
 
-#testimonials .block-heading{
+#experience .block-heading{
 	margin-bottom: 0px;
 }
 
-.testimonial p {
+.experience p {
     line-height: 34px;
     margin-top: 20px;
 }
 
-#testimonials .block-heading h1
+#experience .block-heading h1
 {
 	color: rgb(0, 129, 129);
 	font-family: 'Milonga', cursive;
@@ -531,26 +531,14 @@ ul.numbersList span{
 	font-size: 55px;
 }
 
-/* Education section heading spacing */
-.education p {
-    line-height: 34px;
-    margin-top: 20px;
-}
 
-#education .block-heading h1
-{
-	color: rgb(0, 129, 129);
-	font-family: 'Milonga', cursive;
-	font-weight: 400;
-	font-size: 55px;
-}
 
-#testimonials .testimonial {
+#experience .experience {
 	padding: 25px;
 	cursor: -webkit-grab;
 }
 
-#testimonials .testimonial > img {
+#experience .experience > img {
 	border-radius: 100%;
 	margin-bottom: 15px;
 }
