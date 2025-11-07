@@ -16,13 +16,13 @@
 		<link rel="stylesheet" href="css/main.css">
 
 		<!-- google font -->
-        <link href='http://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
-        <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css2?family=Milonga&display=swap' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="content-block" id="header">
@@ -48,7 +48,7 @@
                                     <li><a href="#services"><i class="fa fa-user"></i> Me</a></li>
                                     <li><a href="#experience"><i class="fa fa-briefcase"></i> Experience</a></li>
                                     <li><a href="#education"><i class="fa fa-graduation-cap"></i> Education</a></li>
-                                    <li><a href="#testimonials"><i class="fa fa-code"></i> Projects</a></li>
+                                    <li><a href="#projects"><i class="fa fa-code"></i> Projects</a></li>
                                     <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
 
                                 </ul>
@@ -111,51 +111,56 @@
         </div>
         
         <div class="content-block text-center" id="experience">
-            <header class="block-heading cleafix text-center">
+            <header class="block-heading cleafix text-center" style="margin-block:38px;">
                 <h1>Work Experience</h1>
                 <!-- <p>Take a look at some of my recent products</p> -->
             </header>
 
              <div class="block-content text-center">
                 <div class="container">
-                    <div class="row">
-                    <div class="col-xs-12">
+                        <div  >
+                        <!-- Part-time Experience (full width) -->
+                        <div class="experience-item text-left" style="margin-bottom:48px;">
+                            <h3 >Part-time Software Engineer Intern </h3>
+                            <h4>
+                                <a href="https://botcalm.com/" target="_blank" rel="noopener">
+                                    <img src="img/bc.jpg" alt="BotCalm" style="height:40px; vertical-align:middle; margin-right:8px;" />
+                                    BotCalm Pvt. Ltd. 
+                                </a>
+                            </h4>
+                            <span class="exp-duration" style="font-style:italic;">(Dec 2024 – Nov 2025)</span>
+                            <p  style="margin-top:10px;">
+Contributing to real-world software products with a strong focus on scalable development, AI-powered features, and modern web engineering practices.                            </p>
+                            <ul>
+                                <li>Supporting backend & frontend development in production apps</li>
+                                <li>Collaborating in Agile environments (Scrum), participating in sprint planning, daily stand-ups, code reviews, and milestone delivery</li>
+                                <li>Building and maintaining full-stack applications with responsive UI and secure API integrations</li>
+                                                                <li>Tech stack: React, Node.js, Express, MongoDB, REST APIs, Docker, Git, Agile, Figma, Postman</li>
+
+                            </ul>
+                        </div>
                         <!-- Internship Experience (full width) -->
                         <div class="experience-item text-left">
                             <h3>Software Engineer Intern</h3>
-                            <h4>BotCalm (Sri Lanka)</h4>
-                            <span class="exp-duration">Jun 2024 – Dec 2024</span>
-                            <p>
+                            <h4>
+                                <a href="https://botcalm.com/" target="_blank" rel="noopener">
+                                    <img src="img/bc.jpg" alt="BotCalm" style="height:40px; vertical-align:middle; margin-right:8px;" />
+                                    BotCalm Pvt. Ltd. 
+                                </a>
+                            </h4>
+                            <span class="exp-duration" style="font-style:italic;">(Jun 2024 – Nov 2024)</span>
+                            <p style="margin-top:10px;">
                                 Worked as a Software Engineering Intern contributing to development and deployment of AI-driven automation products.
                                 Supported full-stack development using modern frameworks and tools.
                             </p>
                             <ul>
                                 <li>Built and maintained web components using React & Node.js</li>
                                 <li>Integrated REST APIs and improved system performance</li>
-                                <li>Worked with cloud deployment & CI/CD pipelines</li>
                                 <li>Collaborated closely with engineering & product teams</li>
                             </ul>
                         </div>
-                    </div>
 
-                    <div class="col-xs-12">
-                        <!-- Part-time Experience (full width) -->
-                        <div class="experience-item text-left">
-                            <h3>Part-time Software Engineer</h3>
-                            <h4>BotCalm (Sri Lanka)</h4>
-                            <span class="exp-duration">Jan 2025 – Present</span>
-                            <p>
-                                Contributing to real-world software products while focusing on scalable development,
-                                machine learning integrations, and production-level deployments.
-                            </p>
-                            <ul>
-                                <li>Developing intelligent automation and AI-based solutions</li>
-                                <li>Supporting backend & frontend development in production apps</li>
-                                <li>Maintaining Dockerized applications and automation pipelines</li>
-                                <li>Working on product testing, debugging, and optimization</li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                 </div> </div>
             </div>
                <!-- <div class="element-item grid">
@@ -290,7 +295,6 @@
         <div class="content-block" id="education">
             <header class="block-heading cleafix text-center">
                 <h1>Educational Qualifications</h1>
-                <!-- <p>Lorem Ipsum Text</p> -->
             </header>
             <div class="block-content text-center">
                 <div class="container">
@@ -298,7 +302,7 @@
                         <div class="col-md-6 col-md-offset-3">
                         	<div class="owl-carousel">
 								<div class="owl-item">
-									<div class="testimonial">
+									<div class="education">
                                         <img alt="University of Ruhuna Logo" src="img/bg/uor.webp" ><br>
                                         <strong>B.Sc. (Hons) in Computer Engineering - 2025</strong>
                                         <p>
@@ -310,20 +314,20 @@
 
 								</div>	<!-- owl-item -->
 								<div class="owl-item">
-  <div class="testimonial" style="overflow: visible;">
-    <img alt="AL Certificate" src="img/bg/al.webp" style="object-fit:contain; border-radius:0;">
-    <br>
-    <strong>Advanced Level Examination – Physical Science Stream (2019)</strong><br>
-    <p>
-    Completed the GCE Advanced Level Examination in the Physical Science stream with strong results in Combined Mathematics, Physics, and Chemistry. Developed solid analytical and problem-solving skills and built a strong foundation for engineering studies.
-    </p>
-    <strong>R/ Sivali Central College, Ratnapura</strong><br>
-    <span>Result: Mathematics - A, Physics - B, Chemistry - B</span>
-  </div>
-</div>
-	<!-- owl-item -->
+                                    <div class="education" style="overflow: visible;">
+                                        <img alt="AL Certificate" src="img/bg/al.webp" style="object-fit:contain; border-radius:0;">
+                                        <br>
+                                        <strong>Advanced Level Examination – Physical Science Stream (2019)</strong><br>
+                                        <p>
+                                        Completed the GCE Advanced Level Examination in the Physical Science stream with strong results in Combined Mathematics, Physics, and Chemistry. Developed solid analytical and problem-solving skills and built a strong foundation for engineering studies.
+                                        </p>
+                                        <strong>R/ Sivali Central College, Ratnapura</strong><br>
+                                        <span>Result: Mathematics - A, Physics - B, Chemistry - B</span>
+                                    </div>
+                                    </div>
+                                        <!-- owl-item -->
 								<div class="owl-item">
-									<div class="testimonial">
+									<div class="education">
                                         <img alt="O/L Certificate" src="img/bg/ol.webp">
                                         <br>
 
@@ -348,61 +352,12 @@
         </div>	<!-- content-block -->
 
         <div class="content-block" id="projects">
-            <header class="block-heading cleafix text-center">
-                <h1>Educational Qualifications</h1>
-                <!-- <p>Lorem Ipsum Text</p> -->
+            <header class="block-heading cleafix text-center" >
+                <h1>My Projects</h1>
             </header>
             <div class="block-content text-center">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                        	<div class="owl-carousel">
-								<div class="owl-item">
-									<div class="testimonial">
-                                        <img alt="University of Ruhuna Logo" src="img/bg/uor.webp" ><br>
-                                        <strong>B.Sc. (Hons) in Computer Engineering - 2025</strong>
-                                        <p>
-                                        Completed a Bachelor of Science in Computer Engineering at the University of Ruhuna, gaining solid knowledge in software development, networking, databases, and modern web technologies. Engaged in innovative projects and collaborative engineering work, strengthening my skills in problem-solving, system design, and real-world application development.
-                                        </p>
-                                        <strong>Faculty Of Engineering, University of Ruhuna</strong><br>
-                                        <span>Specialization in Computer Engineering</span>
-                                    </div>
-
-								</div>	<!-- owl-item -->
-								<div class="owl-item">
-  <div class="testimonial" style="overflow: visible;">
-    <img alt="AL Certificate" src="img/bg/al.webp" style="object-fit:contain; border-radius:0;">
-    <br>
-    <strong>Advanced Level Examination – Physical Science Stream (2019)</strong><br>
-    <p>
-    Completed the GCE Advanced Level Examination in the Physical Science stream with strong results in Combined Mathematics, Physics, and Chemistry. Developed solid analytical and problem-solving skills and built a strong foundation for engineering studies.
-    </p>
-    <strong>R/ Sivali Central College, Ratnapura</strong><br>
-    <span>Result: Mathematics - A, Physics - B, Chemistry - B</span>
-  </div>
-</div>
-	<!-- owl-item -->
-								<div class="owl-item">
-									<div class="testimonial">
-                                        <img alt="O/L Certificate" src="img/bg/ol.webp">
-                                        <br>
-
-                                        <strong>Ordinary Level Examination - 2016</strong><br>
-
-                                        <p>
-                                            Successfully completed the GCE Ordinary Level Examination with excellent results, achieving 
-                                            9 Distinctions (A Passes). Demonstrated strong academic performance, dedication, and consistency 
-                                            across all subjects, laying a solid foundation for advanced studies in the science and engineering fields.
-                                        </p>
-
-                                        <strong>R/Eheliyagoda Central College, Eheliyagoda</strong><br>
-                                        <span>Result: 9A Passes</span>
-                                    </div>
-
-								</div>	<!-- owl-item -->
-							</div>	<!-- owl-carousel -->
-						</div>	<!-- col-md-12 -->
-                    </div>	<!-- row -->
+                    
                 </div>	<!-- container -->
             </div>	<!-- block-content -->
         </div>
