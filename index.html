@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-    	<title>Developer</title>
+    	<title>Nishadi</title>
 
     	<!-- meta -->
         <meta charset="utf-8">
@@ -84,30 +84,40 @@
         
             <div id="services" class="content-block">
             <div id="numbers" class="parallax">
-                <div class="overlay">
-                    <!-- title -->
-                    <div class="container-fluid numbers-title">
-                        <div class="container">
-                            <div class="row block-heading">
-                                <h1>Some Cool Facts About Me</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2 text-center numbers-content">
-                                    <p class="lead">I am a Software Engineer focused on building clean, responsive, and accessible web applications. I enjoy solving problems and turning ideas into working products.</p>
-                                    <p style="color: #000;">
-                                        <strong>Key skills:</strong> HTML, CSS, Bootstrap, JavaScript , React, Node.js, Express, REST APIs, Git, Responsive Design, Performance Optimization, MERN, Database Management.
-                                    </p>
-                                    <a href="#contact" class="btn btn-primary btn-sm">Contact / Hire Me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- container-fluid end -->
-                </div><!-- overlay end -->
+    <div class="overlay">
+        <!-- title -->
+        <div class="container-fluid numbers-title">
+            <div class="container">
+                <div class="row block-heading">
+                    <h1>About Me</h1>
+                </div>
             </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center numbers-content">
+
+                        <!-- Your Photo -->
+                        <img src="img/bg/my.jpeg" alt="Profile Photo" 
+                             style="width:200px;height:200px;border-radius:50%;object-fit:cover;margin-bottom:20px;margin-top: -30px;border:3px solid #fff;">
+
+                        <p class="lead">
+                            I am a Software Engineer focused on building clean, responsive, and accessible web applications. 
+                            I enjoy solving problems and turning ideas into working products.
+                        </p>
+                        <p style="color: #000;">
+                            <strong>Key skills:</strong> HTML, CSS, Bootstrap, JavaScript , React, Node.js, Express, REST APIs, Git, Responsive Design, Performance Optimization, MERN, Database Management.
+                        </p>
+                        <a href="#contact" class="btn btn-primary btn-sm">Contact / Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- container-fluid end -->
+    </div><!-- overlay end -->
+</div>
+
         </div>
         
         <div class="content-block text-center" id="experience">
@@ -358,6 +368,7 @@ Contributing to real-world software products with a strong focus on scalable dev
             <div class="block-content text-center">
                 <div class="container">
                     <div class="row">
+                        <!-- cctv project -->
                         <div class="col-md-6">
                             <div class="project-card" style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;">
                                 <img src="img/cctv.jpeg" alt="CCTV Abnormal Event Detection System" class="img-responsive " style="border-radius:8px; height: 200px; " />
@@ -375,32 +386,63 @@ Contributing to real-world software products with a strong focus on scalable dev
 
                         </div>
 
+                        <!-- vehicle website -->
                         <div class="col-md-6">
                             <div class="project-card" style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;">
-                                <img src="img/bg/uor.webp" alt="Landing Page" class="img-responsive" style="border-radius:8px;" />
-                                <h3 style="margin-top:12px;">Landing Page Development</h3>
-                                <p class="text-muted">Promotional landing page for a fitness website summer campaign. Form development included.</p>
-                                <a href="#" class="btn btn-view">SEE DETAILS</a>
+                                <img src="img/cctv.jpeg" alt="Vehicle & Transportation Reservation System" class="img-responsive" style="border-radius:8px;" />
+
+                                <h3 style="margin-top:12px;">Vehicle & Transportation Reservation System</h3>
+
+                                <p class="text-muted">
+                                    Online transport reservation platform with admin and user dashboards, real-time booking, 
+                                    vehicle management, and seamless ride scheduling.
+                                </p>
+
+                                <button class="btn btn-view" onclick="openModal('transportModal')">SEE DETAILS</button>
+                            </div>
+
+                        </div>
+
+                        <!-- Dairy Modal -->
+                       <div class="col-md-6">
+                            <div class="project-card" style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;">
+                                <img src="img/dairy.webp" alt="Dairy Food Store Room Management System" class="img-responsive" style="border-radius:8px;" />
+                                <h3 style="margin-top:12px;">Dairy Food Store Room Management System</h3>
+                                <p class="text-muted">Inventory & store-room management for dairy products with stock tracking, alerts, and order management.</p>
+                                <button class="btn btn-view" onclick="openModal('dairyModal')">SEE DETAILS</button>
                             </div>
                         </div>
 
+                        <!-- Weather Modal -->
                         <div class="col-md-6">
-                            <div class="project-card" style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;">
-                                <img src="img/bg/uor.webp" alt="Mobile App 2" class="img-responsive" style="border-radius:8px;" />
-                                <h3 style="margin-top:12px;">Mobile App Development</h3>
-                                <p class="text-muted">Mobile app designed to help users discover and explore local restaurants and cuisines.</p>
-                                <a href="#" class="btn btn-view">SEE DETAILS</a>
-                            </div>
+                        <div class="project-card" style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;">
+                            <img src="img/weather.webp" alt="Personalized Weather Application" class="img-responsive" style="border-radius:8px;" />
+                            <h3 style="margin-top:12px;">Personalized Weather Application</h3>
+                            <p class="text-muted">User-authenticated weather dashboard with Colombo quick view, geolocation weather and multi-day forecasts.</p>
+                            <button class="btn btn-view" onclick="openModal('weatherModal')">SEE DETAILS</button>
+                        </div>
                         </div>
 
+                         <!-- Hand Sketch Recognition Modal -->
                         <div class="col-md-6">
-                            <div class="project-card" style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;">
-                                <img src="img/bg/uor.webp" alt="E-commerce" class="img-responsive" style="border-radius:8px;" />
-                                <h3 style="margin-top:12px;">E-commerce Development</h3>
-                                <p class="text-muted">Ecommerce website offering access to the latest and greatest gadgets and accessories.</p>
-                                <a href="#" class="btn btn-view">SEE DETAILS</a>
-                            </div>
+                        <div class="project-card" style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;">
+                            <img src="img/handsketch.webp" alt="Hand Sketch Recognition" class="img-responsive" style="border-radius:8px;" />
+                            <h3 style="margin-top:12px;">Hand Sketch Recognition</h3>
+                            <p class="text-muted">A computer-vision system that classifies hand-drawn sketches into predefined categories using CNNs.</p>
+                            <button class="btn btn-view" onclick="openModal('handModal')">SEE DETAILS</button>
                         </div>
+                        </div>
+
+                        <!-- Fake News Detection Modal -->
+                        <div class="col-md-6">
+                        <div class="project-card" style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;">
+                            <img src="img/fakenews.webp" alt="Fake News Detection" class="img-responsive" style="border-radius:8px;" />
+                            <h3 style="margin-top:12px;">Fake News Detection</h3>
+                            <p class="text-muted">NLP-based classifier to flag misinformation articles with explainability and confidence scores.</p>
+                            <button class="btn btn-view" onclick="openModal('fakeModal')">SEE DETAILS</button>
+                        </div>
+                        </div>
+
                     </div>
                 </div>	<!-- container -->
             </div>	<!-- block-content -->
@@ -523,44 +565,181 @@ Contributing to real-world software products with a strong focus on scalable dev
 
 	</body>
     <div id="cctvModal" class="modal">
-  <div class="modal-content">
-      <span class="close" onclick="closeModal('cctvModal')">&times;</span>
-      
-      <h2>CCTV–Based Abnormal Event Detection System</h2>
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cctvModal')">&times;</span>
+            
+            <h2>CCTV–Based Abnormal Event Detection System</h2>
 
-      <p>
-        A deep learning–powered intelligent surveillance solution that detects abnormal behaviors from live CCTV feeds, enhancing security and proactive threat response.
-      </p>
+            <p>
+                A deep learning–powered intelligent surveillance solution that detects abnormal behaviors from live CCTV feeds, enhancing security and proactive threat response.
+            </p>
 
-      <p><strong>GitHub:</strong> 
-        <a href="YOUR_GITHUB_LINK_HERE" target="_blank">View Repository</a>
-      </p>
+            <p><strong>GitHub:</strong> 
+                <a href="YOUR_GITHUB_LINK_HERE" target="_blank">View Repository</a>
+            </p>
 
-      <p style="font-size: 13px; margin: 5px 0;">
-        <strong>Key Features:</strong><br>
-        • Real-time anomaly detection<br>
-        • Live video streaming with instant alerts<br>
-        • Deep learning behavioral analysis<br>
-        • Interactive monitoring dashboard<br>
-        • Event logs with visual predictions<br>
-        • Detect unseen anomalies<br>
-      </p>
-  </div>
-</div>
-<script>
-function openModal(id){
-  document.getElementById(id).style.display = "block";
-}
-function closeModal(id){
-  document.getElementById(id).style.display = "none";
-}
+            <p style="font-size: 13px; margin: 5px 0;">
+                <strong>Key Features:</strong><br>
+                • Real-time anomaly detection<br>
+                • Live video streaming with instant alerts<br>
+                • Deep learning behavioral analysis<br>
+                • Interactive monitoring dashboard<br>
+                • Event logs with visual predictions<br>
+                • Detect unseen anomalies<br>
+            </p>
+        </div>
+        </div>
+    <div id="transportModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('transportModal')">&times;</span>
 
-// close on outside click
-window.onclick = function(e){
-  document.querySelectorAll('.modal').forEach(modal=>{
-    if(e.target === modal){ modal.style.display = "none"; }
-  });
-}
-</script>
+            <h2>Vehicle & Transportation Reservation System (Vishwa Transport)</h2>
+
+            <p>
+                A comprehensive web-based platform enabling customers to easily book vehicles while providing 
+                administrators full control over fleet, schedules, and reservations.
+            </p>
+
+            <p><strong>GitHub:</strong> 
+                <a href="YOUR_GITHUB_LINK" target="_blank">View Repository</a>
+            </p>
+
+            <p style="font-size: 13px; margin: 5px 0;">
+                <strong>Key Features:</strong><br>
+                • Online vehicle booking & scheduling<br>
+                • User & Admin dashboards<br>
+                • Vehicle availability tracking<br>
+                • Booking history & management<br>
+                • Secure login & role-based access<br>
+                • Modern UI with responsive design<br>
+            </p>
+
+            <p style="font-size: 13px; margin: 5px 0;">
+                <strong>Tech Stack:</strong><br>
+                React, Node.js, Express, MongoDB, JWT Auth, REST API
+            </p>
+
+        </div>
+        </div>
+
+        <!-- Dairy Modal -->
+        <div id="dairyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('dairyModal')">&times;</span>
+            <h2>Dairy Food Store Room Management System</h2>
+
+            <p><strong>Description:</strong> A full-featured inventory management system for dairy stores — tracks stock levels, batches, spoilage dates and automates reorder alerts to reduce waste and maintain supply.</p>
+
+            <p><strong>GitHub:</strong> <a href="YOUR_GITHUB_LINK_DAIRY" target="_blank">View Repository</a></p>
+
+            <p style="font-size:13px; margin:5px 0;">
+            <strong>Key Features:</strong><br>
+            • Product & batch tracking with expiry dates<br>
+            • Stock adjustments & reorder alerts<br>
+            • Role-based access (store manager, staff)<br>
+            • Sales & inventory reports<br>
+            • Barcode/QR scanning support for fast stock updates
+            </p>
+
+            <p style="font-size:13px; margin:5px 0;">
+            <strong>Tech Stack:</strong><br>
+            React, Node.js, Express, MongoDB, JWT Auth, REST API, Bootstrap
+            </p>
+        </div>
+        </div>
+
+        <!-- Weather Modal -->
+        <div id="weatherModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('weatherModal')">&times;</span>
+            <h2>Personalized Weather Application (for Mr. Mickey Arthur)</h2>
+
+            <p><strong>Description:</strong> Personalized weather dashboard with secure login, quick Colombo overview, geolocation-based lookup, 3-day & 7-day forecasts, and an easy-to-read UI for desktop & mobile users.</p>
+
+            <p><strong>GitHub:</strong> <a href="YOUR_GITHUB_LINK_WEATHER" target="_blank">View Repository</a></p>
+
+            <p style="font-size:13px; margin:5px 0;">
+            <strong>Key Features:</strong><br>
+            • Real-time current weather & hourly updates<br>
+            • 3-day and full week forecast views<br>
+            • Geolocation & lat/long weather lookup<br>
+            • User accounts and saved locations<br>
+            • Responsive design and accessible UI
+            </p>
+
+            <p style="font-size:13px; margin:5px 0;">
+            <strong>Tech Stack:</strong><br>
+            React, OpenWeatherMap API (or similar), Node/Express (auth), LocalStorage, CSS/Bootstrap
+            </p>
+        </div>
+        </div>
+
+        <!-- Hand Sketch Recognition Modal -->
+        <div id="handModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('handModal')">&times;</span>
+            <h2>Hand Sketch Recognition</h2>
+
+            <p><strong>Description:</strong> A sketch-classification system that accepts user-drawn sketches (canvas input), preprocesses strokes, and classifies them using a convolutional neural network trained on sketch datasets.</p>
+
+            <p><strong>GitHub:</strong> <a href="YOUR_GITHUB_LINK_HAND" target="_blank">View Repository</a></p>
+
+            <p style="font-size:13px; margin:5px 0;">
+            <strong>Key Features:</strong><br>
+            • Canvas-based sketch input in the browser<br>
+            • Image preprocessing (resize, binarize, normalize)<br>
+            • Real-time classification & top-k predictions<br>
+            • Model training pipeline & data augmentation<br>
+            • Confusion matrix & accuracy tracking
+            </p>
+
+            <p style="font-size:13px; margin:5px 0;">
+            <strong>Tech Stack:</strong><br>
+            TensorFlow/Keras or PyTorch, OpenCV, Flask (or FastAPI), HTML5 Canvas, React (frontend integration)
+            </p>
+        </div>
+        </div>
+
+        <!-- Fake News Detection Modal -->
+        <div id="fakeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('fakeModal')">&times;</span>
+            <h2>Fake News Detection</h2>
+
+            <p><strong>Description:</strong> An NLP-based system that predicts whether an article is likely misinformation, returns confidence scores and short explanations (e.g., suspicious phrases or fact-check flags).</p>
+
+            <p><strong>GitHub:</strong> <a href="YOUR_GITHUB_LINK_FAKE" target="_blank">View Repository</a></p>
+
+            <p style="font-size:13px; margin:5px 0;">
+            <strong>Key Features:</strong><br>
+            • Text preprocessing & feature extraction<br>
+            • ML/DL classifier with confidence score<br>
+            • Explainability highlights (keywords & phrases)<br>
+            • Batch analysis & CSV import/export<br>
+            • Simple admin UI for labeling & retraining
+            </p>
+
+            <p style="font-size:13px; margin:5px 0;">
+            <strong>Tech Stack:</strong><br>
+            Python (scikit-learn/transformers), Flask/FastAPI, React frontend, Redis/DB for caching, Docker (optional)
+            </p>
+        </div>
+        </div>
+
+        <script>
+        function openModal(id){
+        document.getElementById(id).style.display = "block";
+        }
+        function closeModal(id){
+        document.getElementById(id).style.display = "none";
+        }
+
+        // close on outside click
+        window.onclick = function(e){
+        document.querySelectorAll('.modal').forEach(modal=>{
+            if(e.target === modal){ modal.style.display = "none"; }
+        });
+        }
+        </script>
 
 </html>
