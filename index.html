@@ -491,7 +491,7 @@ AI-powered customer support chatbot using React, Node.js, and OpenAI GPT-3.5.
                                                                 <h5>Role: Full Stack , AI </h5>
 
                                 <p class="text-muted">
-                                    AI-powered surveillance system that detects abnormal human behaviors in real-time using CCTV feeds.
+                                    AI-powered surveillance system that detects unseen abnormal human behaviors in real-time using CCTV feeds.
                                 </p>
 
                                 <button class="btn btn-view" onclick="openModal('cctvModal')">SEE DETAILS</button>
@@ -532,17 +532,6 @@ AI-powered customer support chatbot using React, Node.js, and OpenAI GPT-3.5.
                                 <button class="btn btn-view" onclick="openModal('handModal')">SEE DETAILS</button>
                             </div>
                         </div>
-
-                        <!-- Fake News Detection Modal -->
-                        <div class="col-md-6">
-                            <div class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="720" style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;">
-                                <img src="img/fake.webp" alt="Fake News Detection" class="img-responsive" style="border-radius:8px; height:250px; width:100%; object-fit:cover;" />
-                            <h3 style="margin-top:12px;">Fake News Detection(Group Project)</h3>
-                            <p class="text-muted">NLP-based classifier to flag misinformation articles with explainability and confidence scores.</p>
-                            <button class="btn btn-view" onclick="openModal('fakeModal')">SEE DETAILS</button>
-                        </div>
-                        </div>
-
                         
                         <!-- vehicle website -->
                         <div class="col-md-6">
@@ -559,6 +548,17 @@ AI-powered customer support chatbot using React, Node.js, and OpenAI GPT-3.5.
                                 <button class="btn btn-view" onclick="openModal('transportModal')">SEE DETAILS</button>
                             </div>
 
+                        </div>
+
+                        
+                        <!-- Fake News Detection Modal -->
+                        <div class="col-md-6">
+                            <div class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="720" style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;">
+                                <img src="img/fake.webp" alt="Fake News Detection" class="img-responsive" style="border-radius:8px; height:250px; width:100%; object-fit:cover;" />
+                            <h3 style="margin-top:12px;">Fake News Detection(Group Project)</h3>
+                            <p class="text-muted">NLP-based classifier to flag misinformation articles with explainability and confidence scores.</p>
+                            <button class="btn btn-view" onclick="openModal('fakeModal')">SEE DETAILS</button>
+                        </div>
                         </div>
                     </div>
                 </div>	<!-- container -->
@@ -708,8 +708,9 @@ AI-powered customer support chatbot using React, Node.js, and OpenAI GPT-3.5.
                 <h2 class="text-center">CCTV–Based Abnormal Event Detection System</h2>
 
                 <p class="text-center">
-                An AI-driven surveillance platform that automatically detects abnormal or suspicious human activities from live CCTV footage in real-time using deep learning models. 
-                This system supports proactive threat detection and automated authority notifications to improve public and institutional safety.
+                An AI-driven surveillance platform that automatically detects <strong>unseen</strong> abnormal or suspicious human activities from live CCTV footage in real-time using deep learning models. 
+                The system can identify anomalies it has never been explicitly trained on, enabling zero-shot detection of novel threats and suspicious behaviors. 
+                This supports proactive threat detection and automated authority notifications to improve public and institutional safety.
                 </p>
 
                 <p>
@@ -722,6 +723,7 @@ AI-powered customer support chatbot using React, Node.js, and OpenAI GPT-3.5.
                 <p style="font-size: 13px; margin: 5px 0;">
                 <strong>Key Features:</strong><br>
                     <ul>
+                        <li><strong>Unseen anomaly detection</strong> — identifies novel, previously unknown abnormal behaviors without explicit training</li>
                         <li>Real-time anomaly detection from CCTV streams</li>
                         <li>Live dashboard with video preview and prediction overlays</li>
                         <li>Deep learning pipeline (EfficientNet + BiLSTM + Transformer)</li>

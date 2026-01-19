@@ -674,6 +674,15 @@ ul.numbersList span{
 	display: flex;
 	flex-direction: column;
 	height: 100%; /* stretches to match sibling column height */
+	
+	/* Smooth transition for hover effect */
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .project-card img {
