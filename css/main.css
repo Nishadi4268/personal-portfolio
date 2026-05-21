@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5,h6 {
 
 /* Design tokens: friendly teal palette + soft background */
 :root {
-	--bg-gradient: linear-gradient(180deg, #eefcf0 0%, #f7fff8 45%, #eaf8ed 100%);
+	--bg-gradient: linear-gradient(180deg, #96f5e5 0%, #cefaf6 55%, #96f5e5 100%);
 	--accent-1: #0fb6a8;
 	--accent-2: #2ec4b6;
 	--muted: #5b6366;
@@ -521,7 +521,9 @@ ul.numbersList span{
 /////////////////////////////////////////////////////////////////////*/
 
 #experience {
-    padding: 60px 0;
+	padding: 60px 0;
+	background: var(--bg-gradient, linear-gradient(180deg,#eefcf0 0%,#f7fff8 45%,#eaf8ed 100%));
+	background-size: cover;
 }
 
 #experience .block-heading{
@@ -575,7 +577,9 @@ ul.numbersList span{
 /////////////////////////////////////////////////////////////////////*/
 
 #education {
-    padding: 60px 0;
+	padding: 60px 0;
+	background: var(--bg-gradient, linear-gradient(180deg,#eefcf0 0%,#f7fff8 45%,#eaf8ed 100%));
+	background-size: cover;
 }
 
 #education .block-heading{
@@ -597,14 +601,56 @@ ul.numbersList span{
 
 
 #education .education { 
-	padding: 25px;
+	padding: 28px 30px;
 	cursor: -webkit-grab;
+	background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,251,250,0.95));
+	border-radius: 14px;
+	box-shadow: 0 8px 30px rgba(20,36,16,0.06);
+	transition: transform 0.45s cubic-bezier(.2,.9,.2,1), box-shadow 0.35s ease;
+	position: relative;
+	text-align: center;
 }
 
 #education .education > img {
 	border-radius: 100%;
-	margin-bottom: 15px;
+	margin: 0 auto 15px;
+	width: 96px;
+	height: 96px;
+	object-fit: cover;
+	box-shadow: 0 6px 18px rgba(6,22,10,0.08);
 }
+
+#education .education:before {
+	content: "";
+	position: absolute;
+	left: calc(50% - 6px);
+	top: 40px;
+	width: 12px;
+	height: 12px;
+	background: var(--accent-2, #2b9b57);
+	border-radius: 50%;
+	box-shadow: 0 4px 12px rgba(43,155,87,0.3);
+}
+
+#education .education:after {
+	content: "";
+	position: absolute;
+	left: calc(50% - 1px);
+	top: 56px;
+	width: 2px;
+	bottom: 18px;
+	background: linear-gradient(to bottom, rgba(43,155,87,0.18), rgba(43,155,87,0.06));
+}
+
+#education .education strong { display:block; color: #184c2c; font-size: 18px; margin-bottom:6px; }
+#education .education span { color: #4d6b54; }
+
+#education .education:hover {
+	transform: translateY(-8px) scale(1.01);
+	box-shadow: 0 20px 40px rgba(17,40,18,0.12);
+}
+
+#education .owl-item { display:flex; justify-content:center; }
 
 /* ///////////////////////////////////////////////////////////////////// 
 //  09 - education > Owl Carousel
@@ -629,7 +675,9 @@ ul.numbersList span{
 /////////////////////////////////////////////////////////////////////*/
 
 #projects {
-    padding: 60px 0;
+	padding: 60px 0;
+	background: var(--bg-gradient, linear-gradient(180deg,#eefcf0 0%,#f7fff8 45%,#eaf8ed 100%));
+	background-size: cover;
 }
 
 #projects .block-heading{
@@ -856,16 +904,40 @@ ul.numbersList span{
 /////////////////////////////////////////////////////////////////////*/
 
 #contact {
+	/* Green-tinted overlay blended with the dotted-map jpg */
 	background:
-		linear-gradient(180deg, rgba(232, 248, 255, 0.55), rgba(240, 246, 255, 0.45)),
+		linear-gradient(180deg, rgba(34, 139, 34, 0.28), rgba(46, 125, 50, 0.36)),
 		url(../img/bg/contact-bg.jpg) no-repeat center center fixed;
 	background-size: cover;
+	background-blend-mode: multiply;
 	color: #fff;
+	position: relative;
 }
 
 #contact .overlay-3 {
-	background-color: rgba(0, 0, 0, 0.45);
+	/* slightly lighter so green tint shows through while keeping contrast */
+	background-color: rgba(0, 0, 0, 0.34);
 	backdrop-filter: blur(2px);
+	position: relative;
+	z-index: 2;
+}
+
+/* stronger green wash using a pseudo overlay so the jpg appears green */
+#contact::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(34,139,34,0.50);
+	mix-blend-mode: multiply;
+	pointer-events: none;
+	z-index: 1;
+}
+
+/* ensure content sits above overlays */
+#contact .block-content,
+#contact .block-heading {
+	position: relative;
+	z-index: 3;
 }
 
 /* Improve text contrast and legibility over the dotted-map background */
